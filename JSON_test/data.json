@@ -1,0 +1,12 @@
+[
+{
+	"name" : "Sage",
+	"age" : 5,
+	"activities" : [
+	  "Sleeping",
+	  "Eating",
+	  "Scratching"
+	]
+	
+}
+]

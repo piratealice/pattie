@@ -1,0 +1,37 @@
+<html>
+<head>
+	
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+			$.getJSON('test.json',function(data){
+				$('#content').empty();
+				$.each(data, function(entryIndex, entry){
+					var html = '<div class="data">';
+                                        html += ("I have an aweome cat and her name is:");
+					html += '<h2>' + entry['name'] + '</h2>';
+                                        html += ("Her age is:");
+					html += '<h3>' + entry['age'] + '</h3>';
+                                        html += ("Some of her favorite things to do:");					
+				if(entry['activities']){
+                            html += '<div class="activities">';                                           
+	                    html += '<ul>';
+	                    $.each(entry['activities'],function(activityIndex, activity){
+	                        html += '<li>' + activity + '</li>';                         
+	                    });
+	                    html += '</ul>';                     
+	                    html += '</div>';                                            
+	                }
+			$('#content').append(html);
+				});						   
+			});
+			return false;
+		});
+	
+	</script>
+</head>
+<body>
+<div id="content">
+</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+/* 
+    Document   : mystlye
+    Created on : Jul 9, 2012
+    Author     : Pattie Lee
+    Description:
+        
+*/
+
+body {
+ background-image: url("../images/bg.jpg");
+background-repeat: repeat;
+ font-weight: 400;
+ font-family: 'Average','Helvetica','Arial', serif;
+ line-height: 1.5em;
+
+}
+#overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background:black url("../images/loader.gif") no-repeat scroll center center;
+  
+}
+
+#lightbox {
+  position: absolute;
+}
+#box{
+    background:  url("../images/overlay.png") transparent;
+    background-repeat: repeat-x;
+}
+p {
+    margin-top: 500px;
+    margin-bottom: 100px;
+}
+.main_content{
+    background-image: url("../images/center_tile.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+
+#copy{
+   color: #FFF;
+   margin-bottom: 60px;
+   padding-top: 50px;
+   padding-left:25px;
+   
+}
+.video{
+    padding-top: 50px;
+    padding-left: 15px;
+    
+}
+#button_text{
+    text-align: center;
+  
+    font-size: 21px;
+    color: #f6e9b4;
+    margin-left: 75px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    
+}
+.button{
+   padding-left: 625px;
+   padding-top: 10px;
+   padding-bottom: 20px;
+}
+.fb-like-box{
+    padding-left: 25px;
+}
+.footer{
+    
+    color: #757575;
+    font-size: 11px;
+    text-align: center;
+}
+
+
+
+
