@@ -3,7 +3,8 @@
     <head>
         <link href='http://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-        <script type="text/javascript" src="popup.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+        <script type="text/javascript" src="modal.js"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="css/mystlye.css" />
         <link rel="stylesheet" href="css/960/reset.css" />
@@ -42,12 +43,25 @@
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=115167885245923";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-      <div id="box">
+
+<div id="boxes">  
+    <div id="dialog" class="window">
+        <a href="#" class="close">Close</a>
+        <h1>Tell your legislators to stop attacking Arizona's public employees</h1>
+        <p>In order to address your message to the appropriate recipient we need to identify where you are.</p>
+        <br />
+        <form>
+            Please enter your zip/postal code: <input type="text" name="zip" />   
+            <button type="button">SUBMIT ZIP</button>
+        </form>
+   </div>
+    <div id="mask"></div>
+</div>
+
+  <div id="box">
             <div class="container_12">
         <div class="grid_12"><img src="images/header.png"/></div>
-        <div class="clear"></div>
-        
-        
+        <div class="clear"></div>   
         <div class="main_content">
             <div class="grid_6" id="copy">
                 <p>Gov. Jan Brewer supports effort to silence public employees and other working Arizona families. She and her friends in the legislature wanted to lower the minimum wage, and made deep cuts to education and health care. All while supporting tax breaks to the corporate interests that helped get them elected.</p>
@@ -56,16 +70,12 @@
             </div>          
             <div class="grid_6, video"><iframe width="420" height="315" src="http://www.youtube.com/embed/-hApj60Vsow?rel=0&amp;wmode=transparent" frameborder="0" allowfullscreen></iframe></div> 
 
-        
   <div class="clear"></div>
         <div class="grid_6" id="button_text" >
             <h3>Tell your elected representatives to stop <br />attacking Arizona’s public employees</h3></div>
-        <div class="grid_6, button"><a class="lightbox" href="images/popup.jpg" ><img src="images/button.png"/></a></div>
-
-        </div>
-            
+        <div class="grid_6, button"><a href="#dialog" name="modal" ><img src="images/button.png"/></a></div>
+        </div>   
         <div class="clear"></div>
-       
         <div class="grid_12, fb-like-box" data-href="https://www.facebook.com/pages/AZ-Working-Families/352609338092837" data-width="900" data-height="258" data-show-faces="true" data-stream="false" data-header="false"></div>
             <div class="grid_12, footer">&copy; 2012 Arizona Working Families</div>
               <div class="clear"></div>
